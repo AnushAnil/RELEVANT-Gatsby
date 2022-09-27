@@ -1,0 +1,16 @@
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    // display: flex;
+    // flex-direction: column;
+    @include flexDir(column);
+
+    @include res(desk-md){
+        color: red;
+    }
+
+    @include res(phone){
+        color: green;
+        @include flexDir(row)
+    }
+}

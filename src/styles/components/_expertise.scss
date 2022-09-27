@@ -1,0 +1,52 @@
+.expertise_wrapper{
+    margin-bottom: 2rem;
+    padding: 1rem 6rem;
+    .expertise_1{
+        h1{
+            text-align: center;
+            margin: 2rem 0;
+        }
+        &-item{
+            h2{
+                margin-top: 2.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .expertise_2{
+        h1{
+            text-align: center;
+            margin: 4rem 0 3.5rem;
+        }
+
+        &-memberships{
+            
+            display: flex;
+            justify-content: center;
+            @include res(desk-md){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            &-card{
+                // border: 1px solid black;
+                margin: 0 1.5rem;
+                max-width: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                &-img{
+                    // border: 1px solid black;
+                    padding-bottom: 0.7rem;
+                    text-align: center;
+                    img{
+                        max-height: 100px;
+                    }
+                }
+                &-text{
+                    text-align: center;
+                    // border: 1px solid black;
+                }
+            }
+        }
+    }
+}

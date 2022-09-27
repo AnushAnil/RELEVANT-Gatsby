@@ -1,0 +1,59 @@
+.industriesWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Gotham Pro", Helvetica, sans-serif;
+    .industriesList{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &-title{
+            text-align: center;
+            margin: 2rem 0;
+        }
+        &-item{
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+            background-image: url("https://relevant.software/img/video/home/industry-box/fintech/fintech_blk.webp");
+            background-size: cover;
+            border-radius: 10px;
+            &-content{
+                margin: 4rem 0;
+                color: aliceblue;
+                &-title{
+                    margin-bottom: 1rem;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    list-style: 35px;
+                }
+                ul{
+                    list-style-type: square;
+                    li{
+                        margin: 0.3rem 0;
+                        font-size: 1rem;
+                    }
+                }
+                h5{
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        &-item_2{
+            @extend .industriesList-item;
+            background-image: url("https://relevant.software/img/video/home/industry-box/retail/retail_blk.webp");
+        }
+        &-item_3{
+            @extend .industriesList-item;
+            background-image: url("https://relevant.software/img/video/home/industry-box/realestate/realestate.webp");
+        }
+        &-item_4{
+            @extend .industriesList-item;
+            background-image: url("https://relevant.software/img/video/home/industry-box/travel/travel_blk.webp");
+        }
+        &-item_5{
+            @extend .industriesList-item;
+            background-image: url("https://relevant.software/img/video/home/industry-box/construction/construction_blk.webp");
+        }
+    }
+}
