@@ -14,20 +14,22 @@ import Footer from "../components/footer/Footer"
 import Industries from "../components/industries/Industries"
 import CardCarousel from "../components/cardCarousel/CardCarousel"
 import Accordian from "../components/accordian/Accordian"
+import AnimationCard from "../components/animationCard/AnimationCard"
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <HeroBanner />
+    {/* <HeroBanner />
     <CardCarousel />
     <SuccessCases />
     <Industries />
     <Expertise />
     <ContactCard />
     <Accordian />
-    <Footer />
+    <Footer /> */}
+    <AnimationCard />
   </Layout>
 )
 

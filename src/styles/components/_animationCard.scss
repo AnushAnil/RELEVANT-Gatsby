@@ -1,0 +1,73 @@
+.image-div{
+    img{
+        transition: 1s;
+        
+    }
+}
+.circle{
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    transition: 0.5s;
+    padding: 40px 40px;
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: ease-in-out;
+}
+.circle:hover{
+    transform: rotate(360deg);
+    background-color: salmon;
+}
+
+.circle-1, .circle-2, .circle-3{
+    @extend .circle
+}
+
+.circle-1{
+    animation-duration: 1.8s;
+}
+
+.circle-2{
+    animation-duration: 2.6s;
+}
+.circle-3{
+    animation-duration: 3.2s;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    padding: auto;
+    background-color: rgb(255, 242, 0);
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drive{
+    // from{transform: translateX(-300px);}
+    // to{transform: translateX(0);
+    //     background-color: rgb(255, 0, 0);
+    // }
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes rotate{
+    from{
+        opacity: 0;
+        transform: rotate(0);
+    }
+    to{
+        opacity: 1;
+        transform: rotate(360deg);
+        background-color: rgb(255, 0, 0);
+    }
+}
