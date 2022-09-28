@@ -6,13 +6,13 @@ import { useEffect } from "react"
 
 function Industries() {
   useEffect(() => {
-    Aos.init({ duration: 1000 })
+    Aos.init({ duration: 2000 })
   })
   return (
     <div className="container industriesWrapper">
       <div className="industriesList">
         <h1 className="industriesList-title">Industry Expertise</h1>
-        <div data-aos="fade-left" className="industriesList-item">
+        <div data-aos="zoom-out-up" className="industriesList-item">
           <div className="industriesList-item-content">
             <h1 className="industriesList-item-content-title">Fintech</h1>
             <ul>
@@ -26,7 +26,7 @@ function Industries() {
             </h5>
           </div>
         </div>
-        <div data-aos="fade-left" className="industriesList-item_2">
+        <div data-aos="zoom-out-up" className="industriesList-item_2">
           <div className="industriesList-item-content">
             <h1 className="industriesList-item-content-title">Retail</h1>
             <ul>
@@ -40,7 +40,7 @@ function Industries() {
             </h5>
           </div>
         </div>
-        <div data-aos="fade-left" className="industriesList-item_3">
+        <div data-aos="zoom-out-up" className="industriesList-item_3">
           <div className="industriesList-item-content">
             <h1 className="industriesList-item-content-title">Real Estate</h1>
             <ul>
@@ -54,7 +54,7 @@ function Industries() {
             </h5>
           </div>
         </div>
-        <div data-aos="fade-left" className="industriesList-item_4">
+        <div data-aos="zoom-out-up" className="industriesList-item_4">
           <div className="industriesList-item-content">
             <h1 className="industriesList-item-content-title">Travel</h1>
             <ul>
@@ -68,7 +68,7 @@ function Industries() {
             </h5>
           </div>
         </div>
-        <div data-aos="fade-left" className="industriesList-item_5">
+        <div data-aos="zoom-out-up" className="industriesList-item_5">
           <div className="industriesList-item-content">
             <h1 className="industriesList-item-content-title">Construction</h1>
             <ul>

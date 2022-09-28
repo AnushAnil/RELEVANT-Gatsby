@@ -6,7 +6,7 @@ import { useEffect } from "react"
 
 function SuccessCases() {
   useEffect(() => {
-    Aos.init({ duration: 1000 })
+    Aos.init({ duration: 2000 })
   })
   return (
     <div className="container successCases">
