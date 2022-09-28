@@ -1,11 +1,17 @@
 import React from "react"
 import { FaArrowRight } from "react-icons/fa"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 function SuccessCases() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
+  })
   return (
     <div className="container successCases">
       <h1 className="successCases-title">Success Cases</h1>
-      <div className="successCases-case">
+      <div data-aos="fade-up-right" className="successCases-case">
         <div className="successCases-case-content">
           <h1 className="successCases-case-content-title">Svenn</h1>
           <h3 className="successCases-case-content-subtitle">
@@ -23,7 +29,7 @@ function SuccessCases() {
           />
         </div>
       </div>
-      <div className="successCases-case">
+      <div data-aos="fade-up-left" className="successCases-case">
         <div className="successCases-case-content">
           <h1 className="successCases-case-content-title">Svenn</h1>
           <h3 className="successCases-case-content-subtitle">

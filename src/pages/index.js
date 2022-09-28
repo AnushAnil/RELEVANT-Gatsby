@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import "../styles/main.scss"
+import "../assets/styles/main.scss"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -21,15 +21,13 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    {/* <HeroBanner />
+    <HeroBanner />
     <CardCarousel />
     <SuccessCases />
     <Industries />
     <Expertise />
     <ContactCard />
     <Accordian />
-    <Footer /> */}
-    <AnimationCard />
   </Layout>
 )
 
